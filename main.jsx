@@ -35,7 +35,7 @@ export default function Dashboard({
     setLoading(true);
     setError(null);
     try {
-      const url = `https://sheets.googleapis.com/v4/spreadsheets/${2PACX-1vSSoZqPMIYN4AENE9Aeia7sMoXBYxlxftHViPAcYZ3fe_iXmLhRS3kmUJNv2Dl96Q}/values/${encodeURIComponent(range)}?key=${apiKey}`;
+      const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${encodeURIComponent(range)}?key=${apiKey}`;
       const res = await fetch(url);
       if (!res.ok) throw new Error(await res.text());
       const json = await res.json();
