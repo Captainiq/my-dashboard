@@ -9,7 +9,7 @@ import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, Legend, Line
 export default function Dashboard({
   spreadsheetId,
   apiKey,
-  range = "Sheet1!A1:I",
+  range = "Sheet2!A1:L",
   pollIntervalMs = 30000 // default 30s
 }) {
   const [rows, setRows] = useState([]);
